@@ -8,9 +8,10 @@ flask = "*"
 scikit-learn = "*"
 pandas = "*"
 pickle-mixin = "*"
+gunicorn = "*"
 
 [dev-packages]
 black = "*"
 
 [requires]
-python_version = "3.9"
+python_version = "3.8"
