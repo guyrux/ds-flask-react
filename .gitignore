@@ -143,6 +143,3 @@ cython_debug/
 *.json
 *.pqt
 *.xls*
-
-# Serialized
-*.pkl
