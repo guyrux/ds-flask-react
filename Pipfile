@@ -4,14 +4,14 @@ verify_ssl = true
 name = "pypi"
 
 [packages]
-flask = "*"
-scikit-learn = "*"
 pandas = "*"
 pickle-mixin = "*"
+scikit-learn = "*"
 gunicorn = "*"
+flask = "*"
 
 [dev-packages]
-black = "*"
+flake8 = "*"
 
 [requires]
-python_version = "3.8"
+python_version = "3.9"
