@@ -9,6 +9,7 @@ pickle-mixin = "*"
 scikit-learn = "*"
 gunicorn = "*"
 flask = "*"
+flask-cors = "*"
 
 [dev-packages]
 flake8 = "*"

@@ -3,8 +3,10 @@ import os
 from flask import Flask, request, render_template
 import pandas as pd
 import pickle
+from flask_cors import CORS
 
-app = Flask(__name__)
+app = Flask(__name__) 
+CORS(app)
 
 model = pickle.load(open("./model/example_knn.pkl", "rb"))
 
