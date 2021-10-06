@@ -37,7 +37,7 @@ def predict():
 
     y_predict = model.predict_proba(df_setup)
 
-    output = "{0:.{1}f}".format(y_predict[0][1], 2)
+    output = '{0:.{1}f}'.format(y_predict[0][1], 2)
     output = str(float(output) * 100) + "%"
 
     if output > str(0.5):
@@ -47,12 +47,13 @@ def predict():
         )
     else:
         return render_template(
-            "result.html", pred=f"You have low chance of having diabetes: {output}"
+            "result.html",
+            pred=f"You have low chance of having diabetes: {output}"
         )
 
 
 if __name__ == "__main__":
     # app.run(host="0.0.0.0", port=80)
-    # app.run(debug=True)
-    port = int(os.environ.get("PORT", 5000))
-    app.run(host='0.0.0.0', port=port)
+    app.run(debug=True)
+    # port = int(os.environ.get("PORT", 5000))
+    # app.run(host='0.0.0.0', port=port)
